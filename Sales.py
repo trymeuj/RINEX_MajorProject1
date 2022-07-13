@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 # load the previously dumped joblib model
-model_nb = joblib.load(Store_Sales)
+model_nb = joblib.load('Store_Sales')
 
 st.title(" STORE SALES PREDICT")
 ip1 = st.text_input("Store_Area")   
