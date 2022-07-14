@@ -11,7 +11,7 @@ st.title("Store Sales Predict")
 ip1 = st.number_input("Store_Area")
 ip2 = st.number_input("Items_Available")
 ip3 = st.number_input("Daily_Customer_Count")
-a = scaling.fit_transform([[ip1,ip2,ip3]]
+a = scaling.fit_transform([[ip1,ip2,ip3]])
 
 op = model_nb.predict(a)
 if st.button('PREDICT'):
